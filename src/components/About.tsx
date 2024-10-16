@@ -5,7 +5,7 @@ import Heading from "./ui/heading";
 export default function About() {
   return (
     <>
-      <section className="py-20">
+      <section className="px-4 py-20">
         <div className="text-center">
           <Heading>About EthAi</Heading>
           <p className="mx-auto mb-8 max-w-5xl text-balance text-lg text-accent/70">
@@ -16,7 +16,7 @@ export default function About() {
           <Button>Read More</Button>
         </div>
 
-        <div className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-9 rounded-2xl bg-[#08252A] p-14">
+        <div className="mx-auto mt-10 grid max-w-3xl grid-cols-1 gap-9 rounded-2xl bg-[#08252A] p-7 sm:p-14 md:grid-cols-2">
           <Part
             icon={<Graph />}
             heading="Stay Ahead"
