@@ -71,11 +71,11 @@ function Desktop(props: {
       <section className="relative">
         <div className={cn("flex", even ? "flex-row-reverse" : "flex-row")}>
           <div className="w-1/2"></div>
-          <div className="h-96 w-1/2 bg-slate-900">
+          <div className="h-96 w-1/2">
             {even ? (
-              <div className="h-full w-96 bg-slate-800"></div>
+              <div className="h-full w-96"></div>
             ) : (
-              <div className="ml-auto mr-0 h-full w-96 bg-slate-800"></div>
+              <div className="ml-auto mr-0 h-full w-96"></div>
             )}
           </div>
         </div>
@@ -102,7 +102,7 @@ function Mobile(props: Props) {
     <>
       <section className="px-4">
         <List {...props} />
-        <div className="h-72 bg-slate-800"></div>
+        <div className="h-72"></div>
       </section>
     </>
   );
