@@ -15,8 +15,8 @@ export default function Home() {
       <About />
       <Tokenomics />
       <Roadmap />
-      {/* <FAQ />
-      <Footer /> */}
+      <FAQ />
+      <Footer />
     </>
   );
 }

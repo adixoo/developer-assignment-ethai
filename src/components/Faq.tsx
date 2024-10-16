@@ -11,7 +11,7 @@ export default function FAQ() {
   return (
     <>
       {/* Your component content here */}
-      <section className="mx-auto grid max-w-5xl grid-cols-2 py-20">
+      <section className="mx-auto grid max-w-5xl grid-cols-1 px-4 py-20 lg:grid-cols-2">
         <Heading className="max-w-96">Frequently Asked Questions</Heading>
 
         <div>
@@ -56,20 +56,23 @@ export default function FAQ() {
         </div>
       </section>
 
-      <section className="mx-auto my-28 max-w-5xl rounded-2xl p-14 text-center shadow-[0px_0px_32px_16px_#63F2FF1A_inset]">
-        <Heading>
-          Explore Our <span className="text-[#62F0FE]">dApp</span>
-        </Heading>
-        <p className="mb-8 text-balance leading-relaxed text-accent/70">
-          EthAi is an AI-powered dApp designed to help traders make smarter,
-          data-driven decisions. By tracking smart money flows, monitoring key
-          wallets, and providing real-time market insights, EthAi empowers users
-          to stay ahead of trends. The platform offers intuitive AI features for
-          asset recommendations, market analysis, and personalized crypto Q&A,
-          making it the ultimate tool for both novice and experienced traders.
-        </p>
-        <Button>Open dApp</Button>
-      </section>
+      <div className="px-4">
+        <section className="mx-auto my-28 max-w-5xl rounded-2xl p-14 text-center shadow-[0px_0px_32px_16px_#63F2FF1A_inset]">
+          <Heading>
+            Explore Our <span className="text-[#62F0FE]">dApp</span>
+          </Heading>
+          <p className="mb-8 text-balance leading-relaxed text-accent/70">
+            EthAi is an AI-powered dApp designed to help traders make smarter,
+            data-driven decisions. By tracking smart money flows, monitoring key
+            wallets, and providing real-time market insights, EthAi empowers
+            users to stay ahead of trends. The platform offers intuitive AI
+            features for asset recommendations, market analysis, and
+            personalized crypto Q&A, making it the ultimate tool for both novice
+            and experienced traders.
+          </p>
+          <Button>Open dApp</Button>
+        </section>
+      </div>
     </>
   );
 }

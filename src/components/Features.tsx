@@ -13,7 +13,7 @@ export default function Features() {
               width={60}
               height={60}
               alt="Trade"
-              className="mx-auto mt-10 h-auto w-1/2"
+              className="mx-auto mb-4 mt-10 h-auto w-full max-w-40 lg:w-1/2"
             />
 
             <div>
@@ -25,29 +25,40 @@ export default function Features() {
               </Para>
             </div>
           </div>
-          <div className="col-span-2 row-span-2 rounded-2xl border border-[#0F373C] bg-[#08252A] p-6">
-            <Heading>Market insight</Heading>
-            <Para>
-              Stay ahead of the market. Get real-time updates on market trends,
-              track top traders' movements, and spot signals from key
-              influencers.
-            </Para>
+          <div className="col-span-2 row-span-2 flex items-center overflow-hidden rounded-2xl border border-[#0F373C] bg-[#08252A] p-6">
+            <div className="h-max">
+              <Heading>Market insight</Heading>
+              <Para>
+                Stay ahead of the market. Get real-time updates on market
+                trends, track top traders' movements, and spot signals from key
+                influencers.
+              </Para>
+            </div>
+            <Image
+              src={"/market.svg"}
+              width={60}
+              height={60}
+              className="min-h-full scale-[2.2]"
+              alt="Trade"
+            />
           </div>
-          <div className="col-start-4 row-span-5 rounded-2xl border border-[#0F373C] bg-[#08252A] p-6 text-center lg:rounded-tr-[2.5rem]">
+          <div className="col-start-4 row-span-5 flex flex-col-reverse gap-4 rounded-2xl border border-[#0F373C] bg-[#08252A] p-6 text-center lg:flex-col lg:rounded-tr-[2.5rem]">
             <Image
               src="/ai.svg"
               width={60}
               height={60}
               alt="Trade"
-              className="mx-auto mb-8 h-auto w-full"
+              className="mx-auto h-auto w-full max-lg:max-w-56"
             />
 
-            <Heading>Risk Guard</Heading>
-            <Para>
-              Get alerts on market swings and potential risks before they impact
-              your portfolio. This agent helps you navigate volatility and stay
-              prepared for anything.
-            </Para>
+            <div>
+              <Heading>Risk Guard</Heading>
+              <Para>
+                Get alerts on market swings and potential risks before they
+                impact your portfolio. This agent helps you navigate volatility
+                and stay prepared for anything.
+              </Para>
+            </div>
           </div>
           <div className="col-span-2 col-start-2 row-span-3 row-start-3 flex items-center justify-center rounded-2xl border border-[#0F373C] bg-[#08252A] p-4 text-4xl shadow-[0px_1px_25px_0px_#1DCEF240_inset] max-lg:hidden">
             Our Features
@@ -55,20 +66,39 @@ export default function Features() {
         </div>
 
         <div className="mt-4 grid-cols-5 grid-rows-1 gap-4 max-lg:space-y-4 lg:grid">
-          <div className="col-span-2 rounded-2xl border border-[#0F373C] bg-[#08252A] p-6 lg:rounded-bl-[2.5rem]">
-            <Heading>Portfolio Sync</Heading>
-            <Para>
-              Easily manage your portfolio. You'll always know what you own, how
-              it's performing, and where it's headed.
-            </Para>
+          <div className="col-span-2 flex items-end gap-3 overflow-hidden rounded-2xl border border-[#0F373C] bg-[#08252A] p-6 lg:rounded-bl-[2.5rem]">
+            <div className="h-max">
+              <Heading>Portfolio Sync</Heading>
+              <Para>
+                Easily manage your portfolio. You'll always know what you own,
+                how it's performing, and where it's headed.
+              </Para>
+            </div>
+
+            <Image
+              src={"/portfolio.svg"}
+              width={60}
+              height={60}
+              className="min-h-full scale-[2.2]"
+              alt="Trade"
+            />
           </div>
-          <div className="col-span-3 col-start-3 rounded-2xl border border-[#0F373C] bg-[#08252A] p-6 lg:rounded-br-[2.5rem]">
-            <Heading>Opportunity Scout</Heading>
-            <Para>
-              Find exciting new projects, events and tokens that others might be
-              missing. Identifying promising opportunities early, so you never
-              miss out on the next big thing.
-            </Para>
+          <div className="col-span-3 col-start-3 flex items-end gap-10 overflow-hidden rounded-2xl border border-[#0F373C] bg-[#08252A] p-6 lg:rounded-br-[2.5rem]">
+            <div>
+              <Heading>Opportunity Scout</Heading>
+              <Para>
+                Find exciting new projects, events and tokens that others might
+                be missing. Identifying promising opportunities early, so you
+                never miss out on the next big thing.
+              </Para>
+            </div>
+            <Image
+              src={"/search.svg"}
+              width={60}
+              height={60}
+              className="min-h-full scale-[2.5]"
+              alt="Trade"
+            />
           </div>
         </div>
       </section>
