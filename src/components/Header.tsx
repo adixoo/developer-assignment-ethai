@@ -1,38 +1,25 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import { Menu09Icon } from "./icon";
 export default function Header() {
   return (
     <>
       {/* Your component content here */}
 
-      <header className="fixed left-0 right-0 top-0 z-50 h-max">
-        <div className="container relative z-50 mx-auto flex h-full justify-between py-10">
-          <Image
-            src="/logo.svg"
-            alt="Logo"
-            width={100}
-            height={100}
-            className="h-8 w-auto"
-          />
-          <div className="absolute left-1/2 top-1/2 z-50 inline-flex -translate-x-1/2 -translate-y-1/2 gap-14 rounded-full bg-card/70 px-20 py-5 backdrop-blur">
-            <Link href={"/"} className="text-lg text-accent/70">
-              Features
-            </Link>
-            <Link href={"/"} className="text-lg text-accent/70">
-              Why Us
-            </Link>
-            <Link href={"/"} className="text-lg text-accent/70">
-              Tokenomics
-            </Link>
-            <Link href={"/"} className="text-lg text-accent/70">
-              Roadmap
-            </Link>
-          </div>
-
-          <div>
-            <Button variant={"ghost"}>Log in</Button>
-            <Button>Whitepaper</Button>
+      <header className="fixed left-0 right-0 top-0 z-50 h-max p-4 md:hidden">
+        <div className="rounded-full border border-[#0F373C] bg-card/70 p-4 backdrop-blur-md">
+          <div className="flex items-center justify-between">
+            <Image
+              src="/logo-mini.svg"
+              alt="Logo"
+              width={100}
+              height={100}
+              className="h-6 w-auto"
+            />
+            <button>
+              <Menu09Icon className="size-8" />
+            </button>
           </div>
         </div>
       </header>

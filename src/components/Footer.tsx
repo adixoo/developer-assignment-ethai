@@ -22,7 +22,7 @@ export default function Footer() {
                 href="http://"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-slate-800 p-1.5"
+                className="rounded-full bg-card/30 p-1.5"
               >
                 <Telegram />
               </a>
@@ -30,7 +30,7 @@ export default function Footer() {
                 href="http://"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-slate-800 p-1.5"
+                className="rounded-full bg-card/30 p-1.5"
               >
                 <Instagram />
               </a>
@@ -38,7 +38,7 @@ export default function Footer() {
                 href="http://"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-slate-800 p-1.5"
+                className="rounded-full bg-card/30 p-1.5"
               >
                 <Twitter />
               </a>
@@ -46,7 +46,7 @@ export default function Footer() {
                 href="http://"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-slate-800 p-1.5"
+                className="rounded-full bg-card/30 p-1.5"
               >
                 <Facebook />
               </a>
@@ -54,7 +54,7 @@ export default function Footer() {
                 href="http://"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-slate-800 p-1.5"
+                className="rounded-full bg-card/30 p-1.5"
               >
                 <Discord />
               </a>

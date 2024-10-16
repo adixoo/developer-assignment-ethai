@@ -9,7 +9,7 @@ import Roadmap from "@/components/Roadmap";
 export default function Home() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Hero />
       <Features />
       <About />

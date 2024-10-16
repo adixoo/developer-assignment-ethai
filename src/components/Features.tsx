@@ -6,6 +6,7 @@ export default function Features() {
       {/* Your component content here */}
 
       <section className="mx-auto max-w-6xl px-4">
+        <h2 className="mb-6 text-center text-4xl font-medium">Features</h2>
         <div className="grid-cols-4 grid-rows-5 gap-4 max-lg:space-y-4 lg:grid">
           <div className="row-span-5 flex flex-col justify-between rounded-2xl border border-[#0F373C] bg-[#08252A] p-6 text-center lg:rounded-tl-[2.5rem]">
             <Image
