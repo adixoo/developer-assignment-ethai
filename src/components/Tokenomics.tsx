@@ -4,7 +4,7 @@ export default function Tokenomics() {
   return (
     <>
       {/* Your component content here */}
-      <section className="mx-auto my-16 max-w-6xl">
+      <section id="toke" className="mx-auto my-16 max-w-6xl">
         <Heading className="mb-20 text-center">Tokenomics</Heading>
 
         <div className="flex flex-col items-center gap-10 px-4 md:flex-row">

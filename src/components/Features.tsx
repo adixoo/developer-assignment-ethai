@@ -5,8 +5,10 @@ export default function Features() {
     <>
       {/* Your component content here */}
 
-      <section className="mx-auto max-w-6xl px-4">
-        <h2 className="mb-6 text-center text-4xl font-medium">Features</h2>
+      <section id="features" className="mx-auto max-w-6xl px-4 pt-6">
+        <h2 className="mb-6 text-center text-4xl font-medium lg:hidden">
+          Features
+        </h2>
         <div className="grid-cols-4 grid-rows-5 gap-4 max-lg:space-y-4 lg:grid">
           <div className="row-span-5 flex flex-col justify-between rounded-2xl border border-[#0F373C] bg-[#08252A] p-6 text-center lg:rounded-tl-[2.5rem]">
             <Image
@@ -31,8 +33,8 @@ export default function Features() {
               <Heading>Market insight</Heading>
               <Para>
                 Stay ahead of the market. Get real-time updates on market
-                trends, track top traders' movements, and spot signals from key
-                influencers.
+                trends, track top trader&apos;s movements, and spot signals from
+                key influencers.
               </Para>
             </div>
             <Image
@@ -71,8 +73,8 @@ export default function Features() {
             <div className="h-max">
               <Heading>Portfolio Sync</Heading>
               <Para>
-                Easily manage your portfolio. You'll always know what you own,
-                how it's performing, and where it's headed.
+                Easily manage your portfolio. You&apos;ll always know what you
+                own, how it&apos;s performing, and where it&apos;s headed.
               </Para>
             </div>
 

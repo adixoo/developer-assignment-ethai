@@ -14,7 +14,7 @@ interface Props {
 export default function Roadmap() {
   return (
     <>
-      <div>
+      <div id="roadmap">
         <Heading className="text-center">Roadmap</Heading>
         <Part
           phase={1}
@@ -53,67 +53,6 @@ export default function Roadmap() {
     </>
   );
 }
-//
-// function Part({
-//   phase,
-//   heading,
-//   list,
-//   url,
-// }: {
-//   phase: number;
-//   heading: string;
-//   list: string[];
-//   url: string;
-// }) {
-//   const even = phase % 2 === 0;
-//   return (
-//     <>
-//       <div className="relative">
-//         <div
-//           className={cn(
-//             "mx-auto flex h-96 max-w-6xl",
-//             even ? "flex-row-reverse" : "flex-col lg:flex-row",
-//           )}
-//         >
-//           <div>
-// <span className="rounded-lg bg-foreground px-2 py-1 text-sm font-medium uppercase text-[#0B2A2D]">
-//   Phase {phase}
-// </span>
-// <Heading className="mt-3">{heading}</Heading>
-// <ul className="space-y-4">
-//   {list.map((item) => {
-//     return (
-//       <li key={item} className="flex items-center gap-3">
-//         <svg
-//           className="h-6 w-6 flex-none stroke-[#A3F0FE] stroke-2"
-//           strokeLinecap="round"
-//           strokeLinejoin="round"
-//         >
-//           <circle cx="12" cy="12" r="11" />
-//           <path
-//             d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9"
-//             fill="none"
-//           />
-//         </svg>
-//         {item}
-//       </li>
-//     );
-//   })}
-// </ul>
-//           </div>
-//           <div
-//             className={cn(
-//               "absolute w-[40rem] bg-slate-600",
-//               even ? "left-0" : "right-0",
-//             )}
-//           >
-//             video
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
 
 function Part(props: Props) {
   const isDesktop = useMediaQuery("(min-width: 1024px)");

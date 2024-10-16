@@ -4,6 +4,7 @@ import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { NavLinks } from "@/constants/constant";
 export default function Hero() {
   const isDesktop = useMediaQuery("(min-width: 768px)");
   return (
@@ -18,30 +19,19 @@ export default function Hero() {
             className="h-8 w-auto"
           />
           <div className="absolute left-1/2 top-1/2 z-50 inline-flex -translate-x-1/2 -translate-y-1/2 gap-14 rounded-full bg-card/70 px-20 py-5 backdrop-blur">
-            <Link
-              href={"/"}
-              className="text-nowrap text-lg text-accent/70 transition-colors hover:text-accent"
-            >
-              Features
-            </Link>
-            <Link
-              href={"/"}
-              className="text-nowrap text-lg text-accent/70 transition-colors hover:text-accent"
-            >
-              Why Us
-            </Link>
-            <Link
-              href={"/"}
-              className="text-nowrap text-lg text-accent/70 transition-colors hover:text-accent"
-            >
-              Tokenomics
-            </Link>
-            <Link
-              href={"/"}
-              className="text-nowrap text-lg text-accent/70 transition-colors hover:text-accent"
-            >
-              Roadmap
-            </Link>
+            {NavLinks.map(({ name, id }) => {
+              return (
+                <>
+                  <Link
+                    key={id}
+                    href={`#${id}`}
+                    className="text-nowrap text-lg text-accent/70 transition-colors hover:text-accent"
+                  >
+                    {name}
+                  </Link>
+                </>
+              );
+            })}
           </div>
 
           <div>

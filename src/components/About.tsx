@@ -5,7 +5,7 @@ import Heading from "./ui/heading";
 export default function About() {
   return (
     <>
-      <section className="px-4 py-20">
+      <section id="why" className="px-4 py-20">
         <div className="text-center">
           <Heading>About EthAi</Heading>
           <p className="mx-auto mb-8 max-w-5xl text-balance text-lg text-accent/70">

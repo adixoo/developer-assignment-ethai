@@ -63,7 +63,7 @@ export default function Footer() {
 
           <div className="max-w-lg max-lg:hidden">
             <p className="mb-8 text-4xl font-medium">
-              “Designed for traders of today, just like you."
+              &quot;Designed for traders of today, just like you.&quot;
             </p>
             <div className="flex rounded-2xl border border-[#FBFAF266] p-1">
               <input
